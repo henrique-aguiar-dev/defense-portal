@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Defense Portal</title>
+	<link href="./assets/css/custom-font-awesome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+	<main>
+		<div class="container">
+			<div class="game-screen" draggable="false">
+				<div class="portal" draggable="false"></div>
+				<div class="paused">
+					<h1>Pausado</h1>
+				</div>
+				<div class="start-screen">
+					<h1>Proteja a Terra contra os asteróides</h1>
+					<ul>
+						<li>
+							<p>Uma chuva de asteróides está prestes a atingir a Terra.</p>
+						</li>
+
+						<li>
+							<p>Não se sabe o número exato, mas você deve deter ao menos <strong>70%</strong> deles;</p>
+						</li>
+						<li>
+							<p>Use o portal para enviar os asteróides para outra dimensão;</p>
+						</li>
+						<li>
+							<p>Utilize as setas para direcionar o portal interdimensional (esquerda - direita);</p>
+						</li>
+						<li>
+							<p>Os asteróides que não atravessarem o portal atingirão a Terra;</p>
+						</li>
+					</ul>
+				</div>
+				<!--start-screen-->
+				<div class="result good">
+					<h1>Parabéns!</h1>
+					<h2>Você conseguiu desviar <span class="final-pts"></span> asteróides, ou seja: <span
+							class="perc"></span> foram evitados.</h2>
+					<h2><span class="final-imp"></span> conseguiram atingir a Terra.</h2>
+				</div>
+
+				<div class="result bad">
+					<h1>Você falhou!</h1>
+					<h2>Infelizmente <span class="final-imp"></span> asteróides atingiram a Terra, ou seja: você evitou cerca de <span
+							class="perc"></span> do total.</h2>
+					<h2>Você conseguiu evitar <span class="final-pts"></span> asteróides.</h2>
+				</div>
+
+				<div class="alert">
+					<h1>Deseja iniciar novo jogo?</h1>
+					<button id="yes">SIM</button>
+					<button id="no">NÃO</button>
+				</div>
+			</div>
+			<!--game-screen-->
+			<div class="panel" draggable="false">
+				<button id="btn-ini">Iniciar</button>
+				<button class="pause" id="pause">Pausar</button>
+				<i class="fa fa-arrow-left" id="esq" aria-hidden="true"></i>
+				<i class="fa fa-arrow-right" id="dir" aria-hidden="true"></i>
+				<div class="panel-right">
+					<p>Evitados: </p><span id="avoided"></span>
+					<p>Impactos: </p><span id="impacts"></span>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="./assets/js/main.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Defense Portal</title>
+	<link href="./assets/css/custom-font-awesome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body>
+	<main>
+		<div class="container">
+			<div class="game-screen" draggable="false">
+				<div class="portal" draggable="false"></div>
+				<div class="paused">
+					<h1>Paused</h1>
+				</div>
+				<div class="start-screen">
+					<h1>Protect the earth from asteroids</h1>
+					<ul>
+						<li>
+							<p>An asteroid shower is about to hit the Earth</p>
+						</li>
+
+						<li>
+							<p>The exact number is unknown, but you should avoid at least <strong>70%</strong> of them</p>
+						</li>
+						<li>
+							<p>Use the portal to send the asteroids to another dimension</p>
+						</li>
+						<li>
+							<p>Use the arrows to direct the interdimensional portal (left - right)</p>
+						</li>
+						<li>
+							<p>The asteroids that do not go through the portal will hit the Earth</p>
+						</li>
+					</ul>
+				</div>
+				<!--start-screen-->
+				<div class="result good">
+					<h1>Congratulations!</h1>
+					<h2>You managed to send <span class="final-pts"></span> asteroids to another dimension, that is: <span
+							class="perc"></span> were avoided.</h2>
+					<h2><span class="final-imp"></span> hit the Earth.</h2>
+				</div>
+
+				<div class="result bad">
+					<h1>You failed!</h1>
+					<h2>Unfortunately, <span class="final-imp"></span> asteroids hit the Earth, that is: you avoided about <span class="perc"></span> of them.</h2>
+					<h2>You managed to avoid <span class="final-pts"></span> impacts.</h2>
+				</div>
+
+				<div class="alert">
+					<h1>Want to start a new game?</h1>
+					<button id="yes">YES</button>
+					<button id="no">NO</button>
+				</div>
+			</div>
+			<!--game-screen-->
+			<div class="panel" draggable="false">
+				<button id="btn-ini">Start</button>
+				<button class="pause" id="pause">Pause</button>
+				<i class="fa fa-arrow-left" id="esq" aria-hidden="true"></i>
+				<i class="fa fa-arrow-right" id="dir" aria-hidden="true"></i>
+				<div class="panel-right">
+					<p>Avoided: </p><span id="avoided"></span>
+					<p>Impacts: </p><span id="impacts"></span>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="./assets/js/main.min.js"></script>
+</body>
+
+</html>
