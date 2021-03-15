@@ -250,7 +250,6 @@ const onLoadGlobal = () => {
 	});
 
 	//Mobile touch events - avoidind simultaneous click glitch
-	//CONSERTAR BUG DOS CLIQUES REPETIDOS
 	if (navigator.maxTouchPoints !== 0) {
 		let timeClick1;
 		let timeClick2;
