@@ -1,6 +1,6 @@
 # defense-portal
-Mini-game apenas em HTML, CSS e JavaScript (Apenas para treinamento);
-
+Defend the Earth from the asteroids.
 A simple game made it only with HTML, CSS and JavaScript; (For training only);
 
-Defend the Earth against the asteroids.
+Defensa a Terra contra os asteróides.
+Mini-game apenas em HTML, CSS e JavaScript (Apenas para treinamento);
