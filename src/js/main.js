@@ -314,6 +314,10 @@ const onLoadGlobal = () => {
 	window.addEventListener('orientationchange', () => {
 		gameOn && !gameEnd ? pauseGame() : location.reload();
 	})//-----------------------------------
+
+	window.addEventListener('blur', () => {
+		gameOn && !gameEnd ? pauseGame() : location.reload();
+	})
 }
 
 onLoadGlobal();
